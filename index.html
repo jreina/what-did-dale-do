@@ -53,7 +53,7 @@
             .map((post) => post.data.title)
         )
         .then((data) => data[Math.floor(Math.random() * data.length)])
-        .then((title) => title.replace(/florida man/gi, "Dale"))
+        .then((title) => title.replace(/florida\s?man/gi, "Dale"))
         .then((title) => {
           document.body.innerHTML = `<div class="jumbo" id="render-container">
             ${title}
